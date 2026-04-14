@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinePulse | مستكشف الأفلام الذكي</title>
+    <meta name="description" content="استكشف أحدث الأفلام والمسلسلات مع CinePulse. واجهة عصرية وتجربة مستخدم فريدة.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>Cine<span>Pulse</span></span>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="movieSearch" placeholder="ابحث عن فيلمك المفضل...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">الرئيسية</a>
+                <a href="#">الأكثر رواجاً</a>
+                <a href="#">تصنيفات</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>اكتشف عالم السينما بين يديك</h1>
+                <p>استكشف آلاف الأفلام والمسلسلات بأعلى جودة وتفاصيل شاملة.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary">ابدأ الآن</button>
+                    <button class="btn-secondary">مشاهدة العرض</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="movies-section">
+            <div class="section-header">
+                <h2>أفلام مقترحة لك</h2>
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-filter="all">الكل</button>
+                    <button class="tab-btn" data-filter="action">أكشن</button>
+                    <button class="tab-btn" data-filter="drama">دراما</button>
+                    <button class="tab-btn" data-filter="sci-fi">خيال علمي</button>
+                </div>
+            </div>
+            <div class="movie-grid" id="movieGrid">
+                <!-- Movie cards will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-film"></i>
+                    <span>Cine<span>Pulse</span></span>
+                </div>
+                <p>© 2026 CinePulse. جميع الحقوق محفوظة.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
